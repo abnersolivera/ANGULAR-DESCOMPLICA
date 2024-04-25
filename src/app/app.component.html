@@ -1,5 +1,7 @@
 <h1>Primeira pagina</h1>
 <app-header></app-header>
+<br/>
+<a [routerLink]="['pai']">Pai</a>
 <router-outlet></router-outlet>
 
 <div *ngIf="premiumCustomer; else notPremiumCustomer"> 
