@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { ComponentModule } from './components/components.module';
 import { FormsModule } from '@angular/forms';
 import { BindingPageComponent } from './pages/binding-page.component';
+import { CustomUppercasePipe } from './pipes/custom-uppercase.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BindingPageComponent
+    BindingPageComponent,
+    CustomUppercasePipe
   ],
   imports: [
     BrowserModule,

@@ -39,4 +39,10 @@ export class AppComponent {
   remove(){
     this.values.pop();
   }
+
+  umaData = new Date();
+
+  umDinheiro = 1000;
+
+  name = 'João';
 }
