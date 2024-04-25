@@ -4,9 +4,12 @@ import { ClientListPage } from './pages/client-list-page.component';
 import { Filho1PageComponent } from './pages/filho1-page.component';
 import { Filho2PageComponent } from './pages/filho2-page.component';
 import { PaiComponent } from './pages/pai.component';
+import { UserGuard } from './guards/user.guard';
+import { LoginPageComponent } from './pages/login-page.component';
 
 const routes: Routes = [
-  {path: 'client', component: ClientListPage},
+  {path: 'client', component: ClientListPage, canActivate: [UserGuard]},
+  {path: 'login', component: LoginPageComponent},
   {
     path: 'pai', 
     children: [

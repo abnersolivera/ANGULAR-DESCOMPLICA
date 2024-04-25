@@ -11,6 +11,8 @@ import { ClientService } from './services/client.service';
 import { Filho1PageComponent } from './pages/filho1-page.component';
 import { Filho2PageComponent } from './pages/filho2-page.component';
 import { PaiComponent } from './pages/pai.component';
+import { ClientListPage } from './pages/client-list-page.component';
+import { LoginPageComponent } from './pages/login-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { PaiComponent } from './pages/pai.component';
     CustomUppercasePipe,
     PaiComponent,
     Filho1PageComponent,
-    Filho2PageComponent
+    Filho2PageComponent,
+    ClientListPage,
+    LoginPageComponent    
   ],
   imports: [
     BrowserModule,
