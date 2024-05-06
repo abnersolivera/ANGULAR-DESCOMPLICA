@@ -7,11 +7,9 @@ import { Component } from "@angular/core";
 export class ClientListPage{
 
     clients = [
-        "Client 1",
-        "Client 2",
-        "Client 3",
-        "Client 4",
-        "Client 5"
+        {id: 1, name: "Client 1"},
+        {id: 2, name: "Client 2"},
+        {id: 3, name: "Client 3"}
     ];
     
 }
