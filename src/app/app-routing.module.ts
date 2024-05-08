@@ -9,6 +9,7 @@ import { LoginPageComponent } from './pages/login-page.component';
 import { ClientDetalhePageComponent } from './pages/client-detalhe-page.component';
 import { ListaPessoasPage } from './pages/lista-pessoas-page.component';
 import { RxjsPageComponent } from './pages/rxjs-page.component';
+import { UserPageComponent } from './pages/user-page.component';
 
 const routes: Routes = [
   {path: 'client', component: ClientListPage, canActivate: [UserGuard]},
@@ -23,7 +24,8 @@ const routes: Routes = [
     component: PaiComponent
   },
   {path:'lista-pessoas', component: ListaPessoasPage},
-  {path:'rxjs', component: RxjsPageComponent}
+  {path:'rxjs', component: RxjsPageComponent},
+  {path:'user', component: UserPageComponent}
 ];
 
 @NgModule({
