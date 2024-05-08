@@ -15,6 +15,8 @@ import { ClientListPage } from './pages/client-list-page.component';
 import { LoginPageComponent } from './pages/login-page.component';
 import { ClientDetalhePageComponent } from './pages/client-detalhe-page.component';
 import { RxjsPageComponent } from './pages/rxjs-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ListaPessoasPage } from './pages/lista-pessoas-page.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +29,13 @@ import { RxjsPageComponent } from './pages/rxjs-page.component';
     ClientListPage,
     LoginPageComponent,
     ClientDetalhePageComponent,
-    RxjsPageComponent
+    RxjsPageComponent,
+    ListaPessoasPage
   ],
   imports: [
     BrowserModule,
     ComponentModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule
   ],
